@@ -133,6 +133,7 @@ table {
 html,
 body {
   height: 100%;
+  font-family: 'Comfortaa', cursive;
 }
 /************************ LESS Variables ************************/
 /************************ LESS Mixins ************************/
@@ -167,15 +168,19 @@ body {
 }
 .name {
   font-family: 'Bree Serif', serif;
-  height: 40%;
-  border: 1px solid lightgray;
+  height: 20%;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-content: center;
 }
 .name h1 {
   font-size: 3rem;
   margin-bottom: 0.5em;
+  text-align: center;
+}
+.name p {
+  text-align: center;
 }
 h2 {
   font-family: 'Bree Serif', serif;
@@ -185,13 +190,8 @@ h2 {
   font-size: 1.4rem;
   margin: 1% 0 1% 0;
 }
-p,
-ul,
-li {
-  font-family: 'Comfortaa', cursive;
-}
 nav {
-  padding-bottom: 2rem;
+  margin: 2rem 0 2rem;
 }
 nav ul {
   display: flex;
@@ -217,9 +217,11 @@ nav ul {
 .references ul li {
   display: flex;
   justify-content: center;
-  font-family: 'Comfortaa', cursive;
   list-style-type: none;
   border: 1px solid lightgray;
   padding: 1em;
   width: 100%;
+}
+.contactMe {
+  margin: 2rem 0 2rem;
 }
