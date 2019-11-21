@@ -57,7 +57,15 @@ html, body {
     height: 100%;
 }
 
+
 /************************ LESS Variables ************************/
+@headingFont: 'Bree Serif', serif;
+
+@paragphFont: 'Comfortaa', cursive;
+
+@tbPadding: 1em 0 1em 0;
+
+/************************ LESS Mixins ************************/
 .bordertitle {
 	display: inline-block;
 	border-bottom: 1px grey solid;
@@ -66,13 +74,14 @@ html, body {
 	margin: 1% 0 1% 0;
 }
 
-.wizardryHeadingFont {
-	font-family: 'Bree Serif', serif;
-	// font-size: 24px;
+.columnFlex {
+	display: flex;
+	flex-direction: column;
 }
 
-.wizardryParagphFont {
-	font-family: 'Comfortaa', cursive;
+.flexAround {
+	display: flex;
+	justify-content: space-around;
 }
 
 
@@ -85,44 +94,55 @@ html, body {
 .container {
 	padding-top: 2%;
 	width: 75%;
+	height: 100%;
 	margin: auto;
+
+		section {
+			padding: @tbPadding;
+		}
   }
 
 .name {
-	.wizardryHeadingFont();
-	height: 10em;
+	font-family: @wizardryHeadingFont;
+	height: 40%;
 	border: 1px solid lightgray;
-	display: flex;
-	flex-direction: column;
-	align-content: flex-end;
-}
+	.columnFlex();
+	align-content: space-around;
 
-.tagline {
-	margin-top: .5em;
-}
+		h1 {
+			font-size: 3rem;
+			margin-bottom: .5em;
+		}
+	}
 
-h1 {
-	font-size: 3rem;
-}
+
+
 
 h2 {
+	font-family: @paragphFont;
 	.bordertitle();
-	.wizardryHeadingFont();	
+	
 
   }
 
 li {
-	.wizardryParagphFont();
+	font-family: @paragphFont;
 }
 
 nav {
 	padding-bottom: 2rem;
 
 	ul {
-		display: flex;
-		justify-content: space-around;
+		.flexAround();
 	}
 }  
 
+.middleOfBody {
+	.flexAround();
+}
+
+.endOfBody {
+	.columnFlex();
+}
 
 

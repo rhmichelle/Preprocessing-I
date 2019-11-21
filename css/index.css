@@ -135,6 +135,13 @@ body {
   height: 100%;
 }
 /************************ LESS Variables ************************/
+.wizardryHeadingFont {
+  font-family: 'Bree Serif', serif;
+}
+.wizardryParagphFont {
+  font-family: 'Comfortaa', cursive;
+}
+/************************ LESS Mixins ************************/
 .bordertitle {
   display: inline-block;
   border-bottom: 1px grey solid;
@@ -142,25 +149,31 @@ body {
   font-size: 1.4rem;
   margin: 1% 0 1% 0;
 }
-.wizardryHeadingFont {
-  font-family: 'Bree Serif', serif;
+.columnFlex {
+  display: flex;
+  flex-direction: column;
 }
-.wizardryParagphFont {
-  font-family: 'Comfortaa', cursive;
+.flexAround {
+  display: flex;
+  justify-content: space-around;
 }
 /************************ CSS ************************/
 .container {
   padding-top: 2%;
   width: 75%;
+  height: 100%;
   margin: auto;
+}
+.container section {
+  padding: 1em 0 1em 0;
 }
 .name {
   font-family: 'Bree Serif', serif;
-  height: 10em;
+  height: 40%;
   border: 1px solid lightgray;
   display: flex;
   flex-direction: column;
-  align-content: flex-end;
+  align-content: space-around;
 }
 .tagline {
   margin-top: 0.5em;
@@ -185,4 +198,12 @@ nav {
 nav ul {
   display: flex;
   justify-content: space-around;
+}
+.middleOfBody {
+  display: flex;
+  justify-content: space-around;
+}
+.endOfBody {
+  display: flex;
+  flex-direction: column;
 }
