@@ -59,22 +59,28 @@ html, body {
 
 /************************ LESS Variables ************************/
 .bordertitle {
-	border: 1px black solid;
+	display: inline-block;
+	border-bottom: 1px grey solid;
 	padding: 2px;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
+	margin: 1% 0 1% 0;
 }
 
 .wizardryHeadingFont {
-	font-family: "Ibarra Real Nova", serif;
-	font-size: 16px;
+	font-family: 'Bree Serif', serif;
+	// font-size: 24px;
+}
+
+.wizardryParagphFont {
+	font-family: 'Comfortaa', cursive;
 }
 
 
 /************************ CSS ************************/
-body {
-	background-image: url("images/12 copy.jpg");
-	background-repeat: repeat;
-}
+// body {
+// 	background-image: url("../images/12 copy.jpg");
+// 	background-repeat: repeat;
+// }
 
 .container {
 	padding-top: 4%;
@@ -82,13 +88,36 @@ body {
 	margin: auto;
   }
 
+.name {
+	.wizardryHeadingFont();
+}
+
+.tagline {
+	margin-top: .5em;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
 h2 {
 	.bordertitle();
-	.wizardryHeadingFont();
+	.wizardryHeadingFont();	
+
   }
 
-ul {
-	display: flex;
-	justify-content: space-around;
+li {
+	.wizardryParagphFont();
 }
+
+nav {
+	padding-bottom: 2rem;
+
+	ul {
+		display: flex;
+		justify-content: space-around;
+	}
+}  
+
+
 
