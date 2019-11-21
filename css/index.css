@@ -171,7 +171,7 @@ body {
   border: 1px solid lightgray;
   display: flex;
   flex-direction: column;
-  align-content: space-around;
+  align-content: center;
 }
 .name h1 {
   font-size: 3rem;
@@ -197,16 +197,18 @@ nav ul {
   display: flex;
   justify-content: space-around;
 }
-.middleOfBody {
-  display: flex;
-  justify-content: space-around;
-}
-.middleOfBody .intro {
+.intro {
   width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 0 2rem;
 }
 .endOfBody {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+}
+.endOfBody .workHistory {
+  padding: 4rem 0 4rem 0;
 }
 .references ul {
   display: flex;

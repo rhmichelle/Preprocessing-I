@@ -58,14 +58,28 @@ html, body {
 }
 
 
+
+
+
 /************************ LESS Variables ************************/
+
+
 @headingFont: 'Bree Serif', serif;
 
 @paragphFont: 'Comfortaa', cursive;
 
-@tbPadding: 1em 0 1em 0;
+@comfortPadding: 1em 0 1em 0;
+
+@separateSection: 2rem 0 2rem;
+
+
+
+
+
 
 /************************ LESS Mixins ************************/
+
+
 .bordertitle {
 	display: inline-block;
 	border-bottom: 1px grey solid;
@@ -103,7 +117,7 @@ html, body {
 	margin: auto;
 
 		div {
-			padding: @tbPadding;
+			padding: @comfortPadding;
 		}
   }
 
@@ -112,7 +126,7 @@ html, body {
 	height: 40%;
 	border: 1px solid lightgray;
 	.columnFlex();
-	align-content: space-around;
+	align-content: center;
 
 		h1 {
 			font-size: 3rem;
@@ -141,21 +155,27 @@ nav {
 	}
 }  
 
-.middleOfBody {
-	.flexAround();
 
-	.intro {
+.intro {
 		width: 50%;
+		margin: 0 auto;
+		text-align: center;
+		padding: @separateSection;
+	}
+
+
+
+.endOfBody {
+	display: flex;
+	justify-content: space-around;
+
+	.workHistory {
+		padding: 4rem 0 4rem 0;
 	}
 }
 
-.endOfBody {
-	.columnFlex();
-}
 
-// .references {
-// 	.columnFlex
-// }
+
 
 .references ul {
 	display: flex;
