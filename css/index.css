@@ -150,12 +150,17 @@ body {
 }
 /************************ CSS ************************/
 .container {
-  padding-top: 4%;
+  padding-top: 2%;
   width: 75%;
   margin: auto;
 }
 .name {
   font-family: 'Bree Serif', serif;
+  height: 10em;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
 }
 .tagline {
   margin-top: 0.5em;
