@@ -74,6 +74,11 @@ html, body {
 	margin: 1% 0 1% 0;
 }
 
+.elementBorder {
+	border: 1px solid lightgray;
+	padding: 1em;
+}
+
 .columnFlex {
 	display: flex;
 	flex-direction: column;
@@ -97,13 +102,13 @@ html, body {
 	height: 100%;
 	margin: auto;
 
-		section {
+		div {
 			padding: @tbPadding;
 		}
   }
 
 .name {
-	font-family: @wizardryHeadingFont;
+	font-family: @headingFont;
 	height: 40%;
 	border: 1px solid lightgray;
 	.columnFlex();
@@ -118,14 +123,13 @@ html, body {
 
 
 
-h2 {
-	font-family: @paragphFont;
-	.bordertitle();
-	
 
+h2 {
+	font-family: @headingFont;
+	.bordertitle();
   }
 
-li {
+p, ul, li {
 	font-family: @paragphFont;
 }
 
@@ -139,10 +143,32 @@ nav {
 
 .middleOfBody {
 	.flexAround();
+
+	.intro {
+		width: 50%;
+	}
 }
 
 .endOfBody {
 	.columnFlex();
+}
+
+// .references {
+// 	.columnFlex
+// }
+
+.references ul {
+	display: flex;
+	justify-content: space-between;
+
+		li {
+			display: flex;
+			justify-content: center;
+			font-family: @paragphFont;
+			list-style-type: none;
+			.elementBorder();
+			width: 100%;
+		}
 }
 
 

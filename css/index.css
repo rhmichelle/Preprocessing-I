@@ -135,12 +135,6 @@ body {
   height: 100%;
 }
 /************************ LESS Variables ************************/
-.wizardryHeadingFont {
-  font-family: 'Bree Serif', serif;
-}
-.wizardryParagphFont {
-  font-family: 'Comfortaa', cursive;
-}
 /************************ LESS Mixins ************************/
 .bordertitle {
   display: inline-block;
@@ -148,6 +142,10 @@ body {
   padding: 2px;
   font-size: 1.4rem;
   margin: 1% 0 1% 0;
+}
+.elementBorder {
+  border: 1px solid lightgray;
+  padding: 1em;
 }
 .columnFlex {
   display: flex;
@@ -164,7 +162,7 @@ body {
   height: 100%;
   margin: auto;
 }
-.container section {
+.container div {
   padding: 1em 0 1em 0;
 }
 .name {
@@ -175,20 +173,20 @@ body {
   flex-direction: column;
   align-content: space-around;
 }
-.tagline {
-  margin-top: 0.5em;
-}
-h1 {
+.name h1 {
   font-size: 3rem;
+  margin-bottom: 0.5em;
 }
 h2 {
+  font-family: 'Bree Serif', serif;
   display: inline-block;
   border-bottom: 1px grey solid;
   padding: 2px;
   font-size: 1.4rem;
   margin: 1% 0 1% 0;
-  font-family: 'Bree Serif', serif;
 }
+p,
+ul,
 li {
   font-family: 'Comfortaa', cursive;
 }
@@ -203,7 +201,23 @@ nav ul {
   display: flex;
   justify-content: space-around;
 }
+.middleOfBody .intro {
+  width: 50%;
+}
 .endOfBody {
   display: flex;
   flex-direction: column;
+}
+.references ul {
+  display: flex;
+  justify-content: space-between;
+}
+.references ul li {
+  display: flex;
+  justify-content: center;
+  font-family: 'Comfortaa', cursive;
+  list-style-type: none;
+  border: 1px solid lightgray;
+  padding: 1em;
+  width: 100%;
 }
