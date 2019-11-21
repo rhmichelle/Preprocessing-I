@@ -57,6 +57,38 @@ html, body {
     height: 100%;
 }
 
-@red-color: red;
+/************************ LESS Variables ************************/
+.bordertitle {
+	border: 1px black solid;
+	padding: 2px;
+	font-size: 1.5rem;
+}
 
+.wizardryHeadingFont {
+	font-family: "Ibarra Real Nova", serif;
+	font-size: 16px;
+}
+
+
+/************************ CSS ************************/
+body {
+	background-image: url("images/12 copy.jpg");
+	background-repeat: repeat;
+}
+
+.container {
+	padding-top: 4%;
+	width: 75%;
+	margin: auto;
+  }
+
+h2 {
+	.bordertitle();
+	.wizardryHeadingFont();
+  }
+
+ul {
+	display: flex;
+	justify-content: space-around;
+}
 
