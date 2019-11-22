@@ -74,7 +74,7 @@ html, body {
 
 @separateSection: 2rem 0 2rem;
 
-
+@gray: #3f3f3f;
 
 
 
@@ -84,15 +84,10 @@ html, body {
 
 .bordertitle {
 	display: inline-block;
-	border-bottom: 1px grey solid;
+	border-bottom: 1px solid @gray;
 	padding: 2px;
 	font-size: 1.4rem;
 	margin: 1% 0 1% 0;
-}
-
-.elementBorder {
-	border: 1px solid lightgray;
-	padding: 1em;
 }
 
 .bottomBorder {
@@ -111,11 +106,7 @@ html, body {
 }
 
 
-/************************ CSS ************************/
-// body {
-// 	background-image: url("../images/12 copy.jpg");
-// 	background-repeat: repeat;
-// }
+/*************************** Container & Nav ****************************/
 
 .container {
 	padding-top: 2%;
@@ -127,103 +118,114 @@ html, body {
 			width: 95%;
 		}
 
-		div {
-			padding: @comfortPadding;
+		nav {
+			margin: @separateSection;
+		
+				ul {
+					.flexAround();
+			}
 		}
-  }
+		
+		h2 {
+			font-family: @headingFont;
+			.bordertitle();
+		
+				@media(max-width: 500px) {
+					margin: @comfortPadding;
+				}
+		  }
 
-.name {
-	font-family: @headingFont;
-	height: 20%;
-	.columnFlex();
-	justify-content: flex-end;
-	align-content: center;
+/************************ Name & Intro ************************/
 
-		h1 {
-			font-size: 3rem;
-			margin-bottom: .5em;
+		.name {
+			font-family: @headingFont;
+			height: 20%;
+			.columnFlex();
+			justify-content: flex-end;
+			align-content: center;
+		
+				h1 {
+					font-size: 3rem;
+					margin-bottom: .5em;
+					text-align: center;
+				}
+		
+				p {
+					text-align: center;
+				}
+			}
+
+		.intro {
+			width: 50%;
+			margin: 0 auto;
 			text-align: center;
-		}
-
-		p {
-			text-align: center;
-		}
-	}
-
-
-
-
-
-h2 {
-	font-family: @headingFont;
-	.bordertitle();
-
-		@media(max-width: 500px) {
-			margin: @comfortPadding;
-		}
-  }
-
-
-
-nav {
-	margin: @separateSection;
-
-	ul {
-		.flexAround();
-	}
-}  
-
-
-
-.intro {
-		width: 50%;
-		margin: 0 auto;
-		text-align: center;
-		padding: @separateSection;
-
-		@media(max-width: 500px) {
-			width: 100%;
-			margin: @comfortPadding
-		}
-	}
-
-
-
-.endOfBody {
-	display: flex;
-	justify-content: space-around;
-
-		@media(max-width: 500px) {
-			flex-direction: column;
-			align-items: center;
-			text-align: center;
-		}
-
-	.workHistory {
-		padding: 4rem 0 4rem 0;
-	}
-}
-
-
-
-
-
-.references ul {
-	display: flex;
-	justify-content: space-between;
-
-		li {
-			display: flex;
-			justify-content: center;
-			list-style-type: none;
-			.bottomBorder();
-			width: 100%;
-		}
-}
-
-
-
-.contactMe {
-	margin: @separateSection;
+			padding: @separateSection;
 	
-}
+			@media(max-width: 500px) {
+				width: 100%;
+				margin: @comfortPadding
+			}
+		}
+
+/************************ Skills & History ************************/
+
+		.endOfBody {
+			display: flex;
+			justify-content: space-around;
+			padding: @comfortPadding;
+		
+				@media(max-width: 500px) {
+					flex-direction: column;
+					align-items: center;
+					text-align: center;
+				}
+		
+			.workHistory {
+				padding: 4rem 0 4rem 0;
+			}
+		}
+
+/************************ References ************************/
+
+		.references ul {
+			display: flex;
+			justify-content: space-between;
+		
+				li {
+					display: flex;
+					justify-content: center;
+					list-style-type: none;
+					.bottomBorder();
+					width: 100%;
+				}
+		}
+		
+		.contactMe {
+			margin: @separateSection;
+			
+		}
+		
+
+  }
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
