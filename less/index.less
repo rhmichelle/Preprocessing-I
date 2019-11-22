@@ -54,6 +54,178 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-family: @paragphFont;
+	line-height: 1.5;
 }
+
+
+
+
+
+/************************ LESS Variables ************************/
+
+
+@headingFont: 'Bree Serif', serif;
+
+@paragphFont: 'Comfortaa', cursive;
+
+@comfortPadding: 1em 0 1em 0;
+
+@separateSection: 2rem 0 2rem;
+
+@gray: #3f3f3f;
+
+
+
+
+/************************ LESS Mixins ************************/
+
+
+.bordertitle {
+	display: inline-block;
+	border-bottom: 1px solid @gray;
+	padding: 2px;
+	font-size: 1.4rem;
+	margin: 1% 0 1% 0;
+}
+
+.bottomBorder {
+	border-bottom: 1px solid lightgray;
+	padding: .5em 0 .5em 0;
+}
+
+.columnFlex {
+	display: flex;
+	flex-direction: column;
+}
+
+.flexAround {
+	display: flex;
+	justify-content: space-around;
+}
+
+
+/*************************** Container & Nav ****************************/
+
+.container {
+	padding-top: 2%;
+	width: 75%;
+	height: 100%;
+	margin: auto;
+
+		@media(max-width: 500px) {
+			width: 95%;
+		}
+
+		nav {
+			margin: @separateSection;
+		
+				ul {
+					.flexAround();
+			}
+		}
+		
+		h2 {
+			font-family: @headingFont;
+			.bordertitle();
+		
+				@media(max-width: 500px) {
+					margin: @comfortPadding;
+				}
+		  }
+
+/************************ Name & Intro ************************/
+
+		.name {
+			font-family: @headingFont;
+			height: 20%;
+			.columnFlex();
+			justify-content: flex-end;
+			align-content: center;
+		
+				h1 {
+					font-size: 3rem;
+					margin-bottom: .5em;
+					text-align: center;
+				}
+		
+				p {
+					text-align: center;
+				}
+			}
+
+		.intro {
+			width: 50%;
+			margin: 0 auto;
+			text-align: center;
+			padding: @separateSection;
+	
+			@media(max-width: 500px) {
+				width: 100%;
+				margin: @comfortPadding
+			}
+		}
+
+/************************ Skills & History ************************/
+
+		.endOfBody {
+			display: flex;
+			justify-content: space-around;
+			padding: @comfortPadding;
+		
+				@media(max-width: 500px) {
+					flex-direction: column;
+					align-items: center;
+					text-align: center;
+				}
+		
+			.workHistory {
+				padding: 4rem 0 4rem 0;
+			}
+		}
+
+/************************ References ************************/
+
+		.references ul {
+			display: flex;
+			justify-content: space-between;
+		
+				li {
+					display: flex;
+					justify-content: center;
+					list-style-type: none;
+					.bottomBorder();
+					width: 100%;
+				}
+		}
+		
+		.contactMe {
+			margin: @separateSection;
+			
+		}
+		
+
+  }
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
 
