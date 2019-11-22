@@ -94,6 +94,11 @@ html, body {
 	padding: 1em;
 }
 
+.bottomBorder {
+	border-bottom: 1px solid lightgray;
+	padding: .5em 0 .5em 0;
+}
+
 .columnFlex {
 	display: flex;
 	flex-direction: column;
@@ -116,6 +121,10 @@ html, body {
 	width: 75%;
 	height: 100%;
 	margin: auto;
+
+		@media(max-width: 500px) {
+			width: 95%;
+		}
 
 		div {
 			padding: @comfortPadding;
@@ -147,6 +156,10 @@ html, body {
 h2 {
 	font-family: @headingFont;
 	.bordertitle();
+
+		@media(max-width: 500px) {
+			margin: @comfortPadding;
+		}
   }
 
 
@@ -160,11 +173,17 @@ nav {
 }  
 
 
+
 .intro {
 		width: 50%;
 		margin: 0 auto;
 		text-align: center;
 		padding: @separateSection;
+
+		@media(max-width: 500px) {
+			width: 100%;
+			margin: @comfortPadding
+		}
 	}
 
 
@@ -173,11 +192,21 @@ nav {
 	display: flex;
 	justify-content: space-around;
 
+		@media(max-width: 500px) {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+
 	.workHistory {
 		padding: 4rem 0 4rem 0;
 	}
 }
 
+
+.references h2 {
+	margin: @comfortPadding;
+}
 
 
 
@@ -189,10 +218,12 @@ nav {
 			display: flex;
 			justify-content: center;
 			list-style-type: none;
-			.elementBorder();
+			.bottomBorder();
 			width: 100%;
 		}
 }
+
+
 
 .contactMe {
 	margin: @separateSection;

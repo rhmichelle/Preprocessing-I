@@ -148,6 +148,10 @@ body {
   border: 1px solid lightgray;
   padding: 1em;
 }
+.bottomBorder {
+  border-bottom: 1px solid lightgray;
+  padding: 0.5em 0 0.5em 0;
+}
 .columnFlex {
   display: flex;
   flex-direction: column;
@@ -162,6 +166,11 @@ body {
   width: 75%;
   height: 100%;
   margin: auto;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 95%;
+  }
 }
 .container div {
   padding: 1em 0 1em 0;
@@ -190,6 +199,11 @@ h2 {
   font-size: 1.4rem;
   margin: 1% 0 1% 0;
 }
+@media (max-width: 500px) {
+  h2 {
+    margin: 1em 0 1em 0;
+  }
+}
 nav {
   margin: 2rem 0 2rem;
 }
@@ -203,12 +217,28 @@ nav ul {
   text-align: center;
   padding: 2rem 0 2rem;
 }
+@media (max-width: 500px) {
+  .intro {
+    width: 100%;
+    margin: 1em 0 1em 0;
+  }
+}
 .endOfBody {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .endOfBody {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
 .endOfBody .workHistory {
   padding: 4rem 0 4rem 0;
+}
+.references h2 {
+  margin: 1em 0 1em 0;
 }
 .references ul {
   display: flex;
@@ -218,8 +248,8 @@ nav ul {
   display: flex;
   justify-content: center;
   list-style-type: none;
-  border: 1px solid lightgray;
-  padding: 1em;
+  border-bottom: 1px solid lightgray;
+  padding: 0.5em 0 0.5em 0;
   width: 100%;
 }
 .contactMe {
