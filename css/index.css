@@ -134,6 +134,7 @@ html,
 body {
   height: 100%;
   font-family: 'Comfortaa', cursive;
+  line-height: 1.5;
 }
 /************************ LESS Variables ************************/
 /************************ LESS Mixins ************************/
@@ -236,9 +237,6 @@ nav ul {
 }
 .endOfBody .workHistory {
   padding: 4rem 0 4rem 0;
-}
-.references h2 {
-  margin: 1em 0 1em 0;
 }
 .references ul {
   display: flex;
