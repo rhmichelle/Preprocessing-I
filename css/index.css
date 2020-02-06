@@ -182,7 +182,7 @@ body {
 .container nav {
   width: 100%;
   padding: 4rem;
-  margin: 2rem 0 2rem;
+  margin: 2rem 0 2rem 0;
   color: #D9D9C4;
   font-size: 1.5rem;
 }
@@ -208,6 +208,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-content: center;
+  margin: 2rem 0 6rem 0;
   background-color: #bf8699;
   background-image: url("https://www.transparenttextures.com/patterns/food.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
@@ -225,7 +226,8 @@ body {
   font-size: 1.1rem;
 }
 .container .intro {
-  padding: 2rem 0 2rem;
+  padding: 2rem 0 2rem 0;
+  margin-left: 20rem;
 }
 @media (max-width: 500px) {
   .container .intro {
@@ -236,10 +238,10 @@ body {
 .container .intro h2 {
   border: none;
   padding: 0;
-  margin: 0 1rem 0 0;
+  margin: 4rem 1rem 0 0;
 }
 .container .intro .skills {
-  background-color: #781240;
+  background-color: #134E49;
   color: #73C1C4;
   width: 25rem;
   height: 25rem;
@@ -248,6 +250,19 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+.container .intro .skills ul {
+  padding-bottom: 5rem;
+}
+.container .intro #circle {
+  float: left;
+  margin: 10px;
+  shape-outside: circle();
+  clip-path: circle();
+  padding: 1px;
+}
+.container .intro #aboutMeP {
+  width: 60rem;
 }
 .container .endOfBody {
   display: flex;
@@ -259,9 +274,6 @@ body {
     align-items: center;
     text-align: center;
   }
-}
-.container .endOfBody .workHistory {
-  padding: 4rem 0 4rem 0;
 }
 .container .references {
   padding: 4rem 0;
@@ -282,5 +294,6 @@ body {
   width: 100%;
 }
 .container .contactMe {
-  margin: 2rem 0 2rem;
+  margin: 2rem 0 2rem 0;
+  text-align: center;
 }
