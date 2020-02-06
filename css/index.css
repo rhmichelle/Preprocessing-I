@@ -225,13 +225,7 @@ body {
   font-size: 1.1rem;
 }
 .container .intro {
-  width: 50%;
-  text-align: left;
   padding: 2rem 0 2rem;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  margin-left: 45%;
 }
 @media (max-width: 500px) {
   .container .intro {
@@ -244,6 +238,17 @@ body {
   padding: 0;
   margin: 0 1rem 0 0;
 }
+.container .intro .skills {
+  background-color: #781240;
+  color: #73C1C4;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
 .container .endOfBody {
   display: flex;
   justify-content: space-around;
@@ -254,17 +259,6 @@ body {
     align-items: center;
     text-align: center;
   }
-}
-.container .endOfBody .skills {
-  background-color: #781240;
-  color: #73C1C4;
-  width: 25rem;
-  height: 25rem;
-  border-radius: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
 }
 .container .endOfBody .workHistory {
   padding: 4rem 0 4rem 0;
