@@ -189,6 +189,10 @@ html, body {
 			padding: 6rem;
 			color: @rose;
 
+				@media (min-width: 501px) and (max-width: 900px) {
+					width: 75%;
+				}
+
 				@media (max-width: 500px) {
 					margin: 2rem 1rem 2rem 0;
 					width: 100%;
@@ -224,13 +228,22 @@ html, body {
 			text-align: center;
 			padding-top: 5.5rem;
 
+				@media(min-width: 501px) and (max-width: 900px) {
+					left: 62%;
+					top: 60%;
+				}
+
 				@media(max-width: 500px) {
 					position: static;
 					width: 75%;
 					padding: 2rem;
 					width: 16rem;
 					height: 16rem;
-					margin-left: 40%;
+					margin-left: 35%;
+				}
+
+				@media(max-width: 400px) {
+					margin-left: 30%;
 				}
 		}
 
@@ -329,8 +342,61 @@ html, body {
 		.contactMe {
 			margin: 2rem 0 4rem 0;
 			text-align: center;
-		}
+
+			button, input, select, textarea {
+				font-family: inherit;
+				font-size: 100%;
+			  }
+
+			form {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				width: 40rem;
+				height: auto;
+				margin: 0 auto;
+				border: 1px solid @rose;
+				padding: 20px;
+				border-radius: 5px;
+				box-shadow: 10px 10px 5px -4px rgba(191,134,153,1);
+				font-family: @paragphFont;
+
+					@media (max-width: 500px) {
+						width: 100%;
+						margin: 0 auto;
+					}
+
+				input {
+					width: 50%;
+					height: 1.8rem;
+					display: inline-block;
+					border: none;
+					margin: .2rem;
+				  }
+
+				  textarea { 
+					min-height: 10rem;
+					margin: 1rem 0;
+					border: none;
+				  }
+
+				  button {
+					  font-size: .8rem;
+					  width: 5rem;
+					  height: 5rem;
+					  border-radius: 50%;
+					  padding: 0;
+					  box-shadow: 10px 10px 5px -4px rgba(191,134,153,1);
+					  margin: 0 auto;
+					  border: none;
+				  }
+
+			  }//form  
+		}//contactMe
 		
+
+
+
 	} //container
 
 

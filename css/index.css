@@ -233,6 +233,11 @@ body {
   padding: 6rem;
   color: #781240;
 }
+@media (min-width: 501px) and (max-width: 900px) {
+  .container .name {
+    width: 75%;
+  }
+}
 @media (max-width: 500px) {
   .container .name {
     margin: 2rem 1rem 2rem 0;
@@ -266,6 +271,12 @@ body {
   text-align: center;
   padding-top: 5.5rem;
 }
+@media (min-width: 501px) and (max-width: 900px) {
+  .container .workHistory {
+    left: 62%;
+    top: 60%;
+  }
+}
 @media (max-width: 500px) {
   .container .workHistory {
     position: static;
@@ -273,7 +284,12 @@ body {
     padding: 2rem;
     width: 16rem;
     height: 16rem;
-    margin-left: 40%;
+    margin-left: 35%;
+  }
+}
+@media (max-width: 400px) {
+  .container .workHistory {
+    margin-left: 30%;
   }
 }
 .container .positionReference {
@@ -362,4 +378,52 @@ body {
 .container .contactMe {
   margin: 2rem 0 4rem 0;
   text-align: center;
+}
+.container .contactMe button,
+.container .contactMe input,
+.container .contactMe select,
+.container .contactMe textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+.container .contactMe form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 40rem;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #781240;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px -4px #bf8699;
+  font-family: 'Comfortaa', cursive;
+}
+@media (max-width: 500px) {
+  .container .contactMe form {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.container .contactMe form input {
+  width: 50%;
+  height: 1.8rem;
+  display: inline-block;
+  border: none;
+  margin: 0.2rem;
+}
+.container .contactMe form textarea {
+  min-height: 10rem;
+  margin: 1rem 0;
+  border: none;
+}
+.container .contactMe form button {
+  font-size: 0.8rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  padding: 0;
+  box-shadow: 10px 10px 5px -4px #bf8699;
+  margin: 0 auto;
+  border: none;
 }
