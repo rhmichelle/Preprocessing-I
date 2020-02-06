@@ -54,9 +54,12 @@ table {
 }
 
 html, body {
-	height: 100%;
 	font-family: @paragphFont;
 	line-height: 1.5;
+	background-color: @beige;
+background-image: url("https://www.transparenttextures.com/patterns/wild-flowers.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
 }
 
 
@@ -76,15 +79,19 @@ html, body {
 
 @gray: #3f3f3f;
 
-
-
-
+/* Color Pallete */
+@navy: #041728;
+@turq: #469CA5;
+@lightSea: #73C1C4;
+@beige: #D9D9C4;
+@pink: #BF8699;
+@rose: #781240;
 /************************ LESS Mixins ************************/
 
 
 .bordertitle {
 	display: inline-block;
-	border-bottom: 1px solid @gray;
+	// border-bottom: 1px solid @gray;
 	padding: 2px;
 	font-size: 1.4rem;
 	margin: 1% 0 1% 0;
@@ -109,9 +116,7 @@ html, body {
 /*************************** Container & Nav ****************************/
 
 .container {
-	width: 100%;
-	height: 100%;
-	margin: auto;
+
 	
 
 				@media(max-width: 500px) {
@@ -132,7 +137,7 @@ html, body {
 			width: 100%;
 			padding: 4rem;
 			margin: @separateSection;
-			color: #946b2d;
+			color: @beige;
 			font-size: 1.5rem;
 			
 		
@@ -158,7 +163,9 @@ html, body {
 			justify-content: flex-end;
 			align-content: center;
 			// margin: @separateSection;
-			background-color: #946b2d;
+			background-color: #bf8699;
+			background-image: url("https://www.transparenttextures.com/patterns/food.png");
+			/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 			border-radius: 20px;
 			width: 50%;
 			padding: 6rem;
@@ -177,8 +184,12 @@ html, body {
 
 		.intro {
 			width: 50%;
-			text-align: center;
+			text-align: left;
 			padding: @separateSection;
+			display: flex;
+			justify-content: flex-end;
+			align-items: flex-start;
+			margin-left: 45%;
 	
 					@media(max-width: 500px) {
 						width: 100%;
@@ -186,13 +197,13 @@ html, body {
 					}
 
 					h2 {
-						background-color: pink;
-						border-radius: 50%;
-						height: 100px;
-						text-align: middle;
+						border: none;
+						padding: 0;
+						margin: 0 1rem 0 0;
 					}
-		}
 
+
+				}
 /************************ Skills & History ************************/
 
 		.endOfBody {
@@ -206,12 +217,31 @@ html, body {
 					text-align: center;
 				}
 		
+			.skills {
+				background-color: @rose;
+				color: @pink;
+				width: 25rem;
+				height: 25rem;
+				border-radius: 60%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				text-align: center;
+			}
+
 			.workHistory {
 				padding: 4rem 0 4rem 0;
 			}
 		}
 
 /************************ References ************************/
+
+.references {
+	padding: 4rem 0;
+	background-color: #73c1c4;
+	background-image: url("https://www.transparenttextures.com/patterns/tree-bark.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
 
 		.references ul {
 			display: flex;
@@ -221,7 +251,8 @@ html, body {
 					display: flex;
 					justify-content: center;
 					list-style-type: none;
-					.bottomBorder();
+					border-bottom: 1px dashed black;
+					padding: .5em 0 .5em 0;
 					width: 100%;
 				}
 		}
@@ -231,9 +262,7 @@ html, body {
 			
 		}
 		
-
-  }
-
+	} //container
 
 
 
@@ -242,13 +271,6 @@ html, body {
 
 
  
-
-
-
-
-
-
-
 
 
 
