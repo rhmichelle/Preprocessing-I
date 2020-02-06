@@ -241,9 +241,11 @@ body {
   left: 40rem;
   bottom: 10rem;
   background-color: #469CA5;
-  width: 16rem;
-  height: 16rem;
+  width: 18rem;
+  height: 18rem;
   border-radius: 50%;
+  text-align: center;
+  padding-top: 2rem;
 }
 .container .intro h2 {
   border: none;
