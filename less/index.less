@@ -230,7 +230,7 @@ html, body {
 					padding: 2rem;
 					width: 16rem;
 					height: 16rem;
-					margin: 0 auto;
+					margin-left: 40%;
 				}
 		}
 
@@ -255,6 +255,11 @@ html, body {
 						width: 40rem;
 						margin: 0 0 6rem 8rem;
 
+							@media (max-width: 500px) {
+								margin: 4rem 1rem;
+								width: 100%;
+							}
+
 						h2 {
 							display: inline;
 							vertical-align: top;
@@ -263,14 +268,14 @@ html, body {
 						#bold {
 							font-weight: bold;
 						}
-					}
+					}//aboutMe
 
 					.skills {
 						background-color: @navy;
 						color: @lightSea;
 						width: 25rem;
 						height: 25rem;
-						border-radius: 60%;
+						border-radius: 50%;
 						display: flex;
 						flex-direction: column;
 						justify-content: center;
@@ -278,19 +283,17 @@ html, body {
 						position: relative;
 						margin-left: 20rem;
 
+							@media (max-width: 500px){
+								position: static;
+								margin: 2rem 0 2rem .5rem;
+							}
+
 							ul {
 								padding-bottom: 5rem;
 								background-color: none;
 							}
 					} //skills
 				} //positionReference
-
-		
-				// @media(max-width: 500px) {
-				// 	flex-direction: column;
-				// 	align-items: center;
-				// 	text-align: center;
-				// }
 		
 
 .references {
@@ -301,6 +304,12 @@ html, body {
 	color: white;
 	border-radius: 1rem;
 
+				@media (max-width: 500px) {
+					padding: 0;
+					margin: 1rem 0;
+					width: 100%;
+				}
+
 		ul {
 			display: flex;
 			justify-content: space-between;
@@ -309,7 +318,6 @@ html, body {
 					display: flex;
 					justify-content: center;
 					list-style-type: none;
-					// border-bottom: 1px dashed black;
 					padding: .5em 0 .5em 0;
 					margin: .2em 0 .2em 0;
 					width: 100%;

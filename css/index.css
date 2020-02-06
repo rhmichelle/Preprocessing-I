@@ -273,7 +273,7 @@ body {
     padding: 2rem;
     width: 16rem;
     height: 16rem;
-    margin: 0 auto;
+    margin-left: 40%;
   }
 }
 .container .positionReference {
@@ -295,6 +295,12 @@ body {
   width: 40rem;
   margin: 0 0 6rem 8rem;
 }
+@media (max-width: 500px) {
+  .container .positionReference .aboutMe {
+    margin: 4rem 1rem;
+    width: 100%;
+  }
+}
 .container .positionReference .aboutMe h2 {
   display: inline;
   vertical-align: top;
@@ -307,13 +313,19 @@ body {
   color: #73C1C4;
   width: 25rem;
   height: 25rem;
-  border-radius: 60%;
+  border-radius: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   position: relative;
   margin-left: 20rem;
+}
+@media (max-width: 500px) {
+  .container .positionReference .skills {
+    position: static;
+    margin: 2rem 0 2rem 0.5rem;
+  }
 }
 .container .positionReference .skills ul {
   padding-bottom: 5rem;
@@ -326,6 +338,13 @@ body {
   background-image: url("../images/tree-bark.png");
   color: white;
   border-radius: 1rem;
+}
+@media (max-width: 500px) {
+  .container .references {
+    padding: 0;
+    margin: 1rem 0;
+    width: 100%;
+  }
 }
 .container .references ul {
   display: flex;
