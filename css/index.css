@@ -233,10 +233,22 @@ body {
   padding: 6rem;
   color: #781240;
 }
+@media (max-width: 500px) {
+  .container .name {
+    margin: 2rem 1rem 2rem 0;
+    width: 100%;
+    padding: 8rem 0;
+  }
+}
 .container .name h1 {
   font-size: 3.5rem;
   margin-bottom: 0.4em;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .container .name h1 {
+    font-size: 2rem;
+  }
 }
 .container .name p {
   text-align: center;
@@ -253,6 +265,16 @@ body {
   border-radius: 20px 45px 20px 20px;
   text-align: center;
   padding-top: 5.5rem;
+}
+@media (max-width: 500px) {
+  .container .workHistory {
+    position: static;
+    width: 75%;
+    padding: 2rem;
+    width: 16rem;
+    height: 16rem;
+    margin: 0 auto;
+  }
 }
 .container .positionReference {
   padding: 2rem 0 2rem 0;
