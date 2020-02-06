@@ -57,8 +57,7 @@ html, body {
 	font-family: @paragphFont;
 	line-height: 1.5;
 	background-color: @beige;
-	background-image: url("https://www.transparenttextures.com/patterns/wild-flowers.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+	background-image: url("../images/wild-flowers.png");
 
 }
 
@@ -87,6 +86,7 @@ html, body {
 @beige: #D9D9C4;
 @pink: #BF8699;
 @rose: #781240;
+@goldenBronze: #c49c48;
 /************************ LESS Mixins ************************/
 
 
@@ -164,8 +164,8 @@ html, body {
 			justify-content: flex-end;
 			align-content: center;
 			margin: 2rem 0 10rem 0;
-			background-color: #bf8699;
-			background-image: url("https://www.transparenttextures.com/patterns/food.png");
+			background-color: @pink;
+			background-image: url("../images/food.png");
 			/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 			border-radius: 20px;
 			width: 50%;
@@ -187,24 +187,22 @@ html, body {
 
 		.workHistory {
 			position: absolute;
-			left: 58rem;
-			top: 28rem;
-			background-color: #c49c48;
-background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+			left: 68%;
+			top: 65%;
+			background-color: @goldenBronze;
+			background-image: url("../images/45-degree-fabric-dark.png");
 			width: 18rem;
 			height: 18rem;
-			border-radius: 50%;
+			border-radius: 20px 45px 20px 20px;
 			text-align: center;
 			padding-top: 5.5rem;
 		}
 
 
 
-		.intro {
+		.positionReference {
 			padding: @separateSection;
-			margin-left: 20rem;
-			margin-bottom: 6.1rem;	
+			margin-bottom: 6rem;	
 	
 						@media(max-width: 500px) {
 							width: 100%;
@@ -217,6 +215,20 @@ background-image: url("https://www.transparenttextures.com/patterns/45-degree-fa
 						margin: 4rem 1rem 0 0;
 					}
 
+					.aboutMe {
+						width: 40rem;
+						margin: 0 0 6rem 8rem;
+
+						h2 {
+							display: inline;
+							vertical-align: top;
+						}
+
+						#bold {
+							font-weight: bold;
+						}
+					}
+
 					.skills {
 						background-color: @navy;
 						color: @lightSea;
@@ -227,25 +239,28 @@ background-image: url("https://www.transparenttextures.com/patterns/45-degree-fa
 						flex-direction: column;
 						justify-content: center;
 						text-align: center;
+						position: relative;
+						margin-left: 20rem;
 
 							ul {
 								padding-bottom: 5rem;
+								background-color: none;
 							}
-					}
+					} //skills
 					
-					#circle {
-						float: left;
-						margin: 20px;
-						shape-outside: circle();
-						clip-path: circle();
-						padding: 1px;
-					}
+					// #circle {
+					// 	float: left;
+					// 	margin: 18px;
+					// 	shape-outside: circle();
+					// 	clip-path: circle();
+					// 	padding: 1px;
+					// }
 
 					#aboutMeP {
-						width: 60rem;
+						// width: 60rem;
 					}
 
-				}
+				} //everything
 /************************ Skills & History ************************/
 
 		// .endOfBody {
@@ -271,13 +286,11 @@ background-image: url("https://www.transparenttextures.com/patterns/45-degree-fa
 	padding: 4rem 2rem;
 	margin: 0 1rem;
 	background-color: #134E49;
-	background-image: url("https://www.transparenttextures.com/patterns/tree-bark.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+	background-image: url("../images/tree-bark.png");
 	color: white;
 	border-radius: 1rem;
-}
 
-		.references ul {
+		ul {
 			display: flex;
 			justify-content: space-between;
 		
@@ -291,10 +304,11 @@ background-image: url("https://www.transparenttextures.com/patterns/45-degree-fa
 					width: 100%;
 					background-color: rgba(0, 0, 0, 0.4);
 				}
-		}
+		} //ul
+} //references
 		
 		.contactMe {
-			margin: @separateSection;
+			margin: 2rem 0 4rem 0;
 			text-align: center;
 		}
 		
