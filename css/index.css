@@ -173,7 +173,7 @@ body {
 .container .navigation {
   display: flex;
   justify-content: flex-end;
-  background-color: #222f5b;
+  background-color: #041728;
   border-top-left-radius: 120px;
   border-bottom-left-radius: 120px;
   border-bottom-right-radius: 50px;
@@ -183,7 +183,7 @@ body {
   width: 100%;
   padding: 4rem;
   margin: 2rem 0 2rem 0;
-  color: #D9D9C4;
+  color: #469CA5;
   font-size: 1.5rem;
 }
 .container nav ul {
@@ -208,13 +208,14 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-content: center;
-  margin: 2rem 0 6rem 0;
+  margin: 2rem 0 10rem 0;
   background-color: #bf8699;
   background-image: url("https://www.transparenttextures.com/patterns/food.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   border-radius: 20px;
   width: 50%;
   padding: 6rem;
+  color: #781240;
 }
 .container .name h1 {
   font-size: 3.5rem;
@@ -227,9 +228,11 @@ body {
 }
 .container .workHistory {
   position: absolute;
-  left: 60rem;
+  left: 58rem;
   top: 28rem;
-  background-color: rgba(161, 116, 48, 0.9);
+  background-color: #c49c48;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   width: 18rem;
   height: 18rem;
   border-radius: 50%;
@@ -239,7 +242,7 @@ body {
 .container .intro {
   padding: 2rem 0 2rem 0;
   margin-left: 20rem;
-  margin-bottom: 5.5rem;
+  margin-bottom: 6.1rem;
 }
 @media (max-width: 500px) {
   .container .intro {
@@ -268,7 +271,7 @@ body {
 }
 .container .intro #circle {
   float: left;
-  margin: 10px;
+  margin: 20px;
   shape-outside: circle();
   clip-path: circle();
   padding: 1px;
@@ -277,10 +280,12 @@ body {
   width: 60rem;
 }
 .container .references {
-  padding: 4rem 0;
-  background-color: #73c1c4;
+  padding: 4rem 2rem;
+  margin: 0 1rem;
+  background-color: #134E49;
   background-image: url("https://www.transparenttextures.com/patterns/tree-bark.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+  color: white;
   border-radius: 1rem;
 }
 .container .references ul {
@@ -291,9 +296,10 @@ body {
   display: flex;
   justify-content: center;
   list-style-type: none;
-  border-bottom: 1px dashed black;
   padding: 0.5em 0 0.5em 0;
+  margin: 0.2em 0 0.2em 0;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .container .contactMe {
   margin: 2rem 0 2rem 0;
