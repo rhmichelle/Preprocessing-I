@@ -311,6 +311,12 @@ body {
   width: 40rem;
   margin: 0 0 6rem 8rem;
 }
+@media (min-width: 501px) and (max-width: 900px) {
+  .container .positionReference .aboutMe {
+    margin: 6rem 2rem 6rem 8rem;
+    width: 30rem;
+  }
+}
 @media (max-width: 500px) {
   .container .positionReference .aboutMe {
     margin: 4rem 1rem;
