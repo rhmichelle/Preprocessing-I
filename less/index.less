@@ -132,6 +132,11 @@ html, body {
 			border-bottom-left-radius: 120px;
 			border-bottom-right-radius: 50px;
 			margin-left: 20%;
+
+			@media(max-width: 500px) {
+				width: 99%;
+				margin-left: 5%;
+			}
 		}
 
 		nav {
@@ -141,11 +146,24 @@ html, body {
 			color: @turq;
 			font-size: 1.5rem;
 			
+			@media(max-width: 500px) {
+				width: 100%;
+				font-size: 1rem;
+				padding: 0;
+			}
 		
 				ul {
-					.flexAround();
+					display: flex;
+					justify-content: space-evenly;
+					flex-wrap: wrap;
+
+					@media(max-width: 500px) {
+						width: 98%;
+						margin: 1rem;
+						
+					}
 			}
-		}
+		}//nav
 		
 		h2 {
 			font-family: @headingFont;
@@ -163,10 +181,9 @@ html, body {
 			.columnFlex();
 			justify-content: flex-end;
 			align-content: center;
-			margin: 2rem 0 10rem 0;
+			margin: 6rem 0 10rem 0;
 			background-color: @pink;
 			background-image: url("../images/food.png");
-			/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 			border-radius: 20px;
 			width: 50%;
 			padding: 6rem;
@@ -260,27 +277,15 @@ html, body {
 						// width: 60rem;
 					}
 
-				} //everything
-/************************ Skills & History ************************/
+				} //positionReference
 
-		// .endOfBody {
-		// 	display: flex;
-		// 	justify-content: space-around;
 		
-		// 		@media(max-width: 500px) {
-		// 			flex-direction: column;
-		// 			align-items: center;
-		// 			text-align: center;
-		// 		}
+				// @media(max-width: 500px) {
+				// 	flex-direction: column;
+				// 	align-items: center;
+				// 	text-align: center;
+				// }
 		
-
-
-		// 	.workHistory {
-		// 		// padding: 0 0 4rem 0;
-		// 	}
-		// }
-
-/************************ References ************************/
 
 .references {
 	padding: 4rem 2rem;
