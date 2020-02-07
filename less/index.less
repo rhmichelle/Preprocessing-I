@@ -54,9 +54,11 @@ table {
 }
 
 html, body {
-	height: 100%;
 	font-family: @paragphFont;
 	line-height: 1.5;
+	background-color: @beige;
+	background-image: url("../images/wild-flowers.png");
+
 }
 
 
@@ -72,19 +74,25 @@ html, body {
 
 @comfortPadding: 1em 0 1em 0;
 
-@separateSection: 2rem 0 2rem;
+@separateSection: 2rem 0 2rem 0;
 
 @gray: #3f3f3f;
 
-
-
-
+/* Color Pallete */
+@navy: #041728;
+@darkBlue: #222f5b;
+@turq: #469CA5;
+@lightSea: #73C1C4;
+@beige: #D9D9C4;
+@pink: #BF8699;
+@rose: #781240;
+@goldenBronze: #c49c48;
 /************************ LESS Mixins ************************/
 
 
 .bordertitle {
 	display: inline-block;
-	border-bottom: 1px solid @gray;
+	// border-bottom: 1px solid @gray;
 	padding: 2px;
 	font-size: 1.4rem;
 	margin: 1% 0 1% 0;
@@ -109,22 +117,53 @@ html, body {
 /*************************** Container & Nav ****************************/
 
 .container {
-	padding-top: 2%;
-	width: 75%;
-	height: 100%;
-	margin: auto;
 
-		@media(max-width: 500px) {
-			width: 95%;
+	
+
+				@media(max-width: 500px) {
+					width: 95%;
+				}
+
+		.navigation {
+			display: flex;
+			justify-content: flex-end;
+			background-color: @navy;
+			border-top-left-radius: 120px;
+			border-bottom-left-radius: 120px;
+			border-bottom-right-radius: 50px;
+			margin-left: 20%;
+
+			@media(max-width: 500px) {
+				width: 99%;
+				margin-left: 5%;
+			}
 		}
 
 		nav {
+			width: 100%;
+			padding: 4rem;
 			margin: @separateSection;
+			color: @turq;
+			font-size: 1.5rem;
+			
+			@media(max-width: 500px) {
+				width: 100%;
+				font-size: 1rem;
+				padding: 0;
+			}
 		
 				ul {
-					.flexAround();
+					display: flex;
+					justify-content: space-evenly;
+					flex-wrap: wrap;
+
+					@media(max-width: 500px) {
+						width: 98%;
+						margin: 1rem;
+						
+					}
 			}
-		}
+		}//nav
 		
 		h2 {
 			font-family: @headingFont;
@@ -139,55 +178,157 @@ html, body {
 
 		.name {
 			font-family: @headingFont;
-			height: 20%;
 			.columnFlex();
 			justify-content: flex-end;
 			align-content: center;
+			margin: 6rem 0 10rem 0;
+			background-color: @pink;
+			background-image: url("../images/food.png");
+			border-radius: 20px;
+			width: 50%;
+			padding: 6rem;
+			color: @rose;
+
+				@media (min-width: 501px) and (max-width: 900px) {
+					width: 75%;
+				}
+
+				@media (max-width: 500px) {
+					margin: 2rem 1rem 2rem 0;
+					width: 100%;
+					padding: 8rem 0;
+				}
 		
 				h1 {
-					font-size: 3rem;
-					margin-bottom: .5em;
+					font-size: 3.5rem;
+					margin-bottom: .4em;
 					text-align: center;
+
+					@media (max-width: 500px) {
+						font-size: 2rem;
+					}
 				}
 		
 				p {
 					text-align: center;
+					font-size: 1.1rem;
 				}
-			}
+			} //name
 
-		.intro {
-			width: 50%;
-			margin: 0 auto;
+
+		.workHistory {
+			position: absolute;
+			left: 68%;
+			top: 65%;
+			background-color: @goldenBronze;
+			background-image: url("../images/45-degree-fabric-dark.png");
+			width: 18rem;
+			height: 18rem;
+			border-radius: 20px 45px 20px 20px;
 			text-align: center;
-			padding: @separateSection;
-	
-			@media(max-width: 500px) {
-				width: 100%;
-				margin: @comfortPadding
-			}
-		}
+			padding-top: 5.5rem;
 
-/************************ Skills & History ************************/
-
-		.endOfBody {
-			display: flex;
-			justify-content: space-around;
-			padding: @comfortPadding;
-		
-				@media(max-width: 500px) {
-					flex-direction: column;
-					align-items: center;
-					text-align: center;
+				@media(min-width: 501px) and (max-width: 900px) {
+					left: 62%;
+					top: 60%;
 				}
-		
-			.workHistory {
-				padding: 4rem 0 4rem 0;
-			}
+
+				@media(max-width: 500px) {
+					position: static;
+					width: 75%;
+					padding: 2rem;
+					width: 16rem;
+					height: 16rem;
+					margin-left: 35%;
+				}
+
+				@media(max-width: 400px) {
+					margin-left: 30%;
+				}
 		}
 
-/************************ References ************************/
 
-		.references ul {
+
+		.positionReference {
+			padding: @separateSection;
+			margin-bottom: 6rem;	
+	
+						@media(max-width: 500px) {
+							width: 100%;
+							margin: @comfortPadding
+						}
+
+					h2 {
+						border: none;
+						padding: 0;
+						margin: 4rem 1rem 0 0;
+					}
+
+					.aboutMe {
+						width: 40rem;
+						margin: 0 0 6rem 8rem;
+
+						@media(min-width: 501px) and (max-width: 900px) {
+							margin: 6rem 2rem 6rem 8rem;
+							width: 30rem;
+						}
+
+							@media (max-width: 500px) {
+								margin: 4rem 1rem;
+								width: 100%;
+							}
+
+						h2 {
+							display: inline;
+							vertical-align: top;
+						}
+
+						#bold {
+							font-weight: bold;
+						}
+					}//aboutMe
+
+					.skills {
+						background-color: @navy;
+						color: @lightSea;
+						width: 25rem;
+						height: 25rem;
+						border-radius: 50%;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						text-align: center;
+						position: relative;
+						margin-left: 20rem;
+
+							@media (max-width: 500px){
+								position: static;
+								margin: 2rem 0 2rem .5rem;
+							}
+
+							ul {
+								padding-bottom: 5rem;
+								background-color: none;
+							}
+					} //skills
+				} //positionReference
+		
+
+.references {
+	padding: 4rem 2rem;
+	margin: 0 1rem;
+	background-color: #134E49;
+	background-image: url("../images/tree-bark.png");
+	color: white;
+	border-radius: 1rem;
+
+				@media (max-width: 500px) {
+					padding: 0;
+					margin: 1rem 0;
+					width: 100%;
+				}
+
+		ul {
 			display: flex;
 			justify-content: space-between;
 		
@@ -195,19 +336,73 @@ html, body {
 					display: flex;
 					justify-content: center;
 					list-style-type: none;
-					.bottomBorder();
+					padding: .5em 0 .5em 0;
+					margin: .2em 0 .2em 0;
 					width: 100%;
+					background-color: rgba(0, 0, 0, 0.4);
 				}
-		}
+		} //ul
+} //references
 		
 		.contactMe {
-			margin: @separateSection;
-			
-		}
+			margin: 2rem 0 4rem 0;
+			text-align: center;
+
+			button, input, select, textarea {
+				font-family: inherit;
+				font-size: 100%;
+			  }
+
+			form {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+				width: 40rem;
+				height: auto;
+				margin: 0 auto;
+				border: 1px solid @rose;
+				padding: 20px;
+				border-radius: 5px;
+				box-shadow: 10px 10px 5px -4px rgba(191,134,153,1);
+				font-family: @paragphFont;
+
+					@media (max-width: 500px) {
+						width: 100%;
+						margin: 0 auto;
+					}
+
+				input {
+					width: 50%;
+					height: 1.8rem;
+					display: inline-block;
+					border: none;
+					margin: .2rem;
+				  }
+
+				  textarea { 
+					min-height: 10rem;
+					margin: 1rem 0;
+					border: none;
+				  }
+
+				  button {
+					  font-size: .8rem;
+					  width: 5rem;
+					  height: 5rem;
+					  border-radius: 50%;
+					  padding: 0;
+					  box-shadow: 10px 10px 5px -4px rgba(191,134,153,1);
+					  margin: 0 auto;
+					  border: none;
+				  }
+
+			  }//form  
+		}//contactMe
 		
 
-  }
 
+
+	} //container
 
 
 
@@ -216,13 +411,6 @@ html, body {
 
 
  
-
-
-
-
-
-
-
 
 
 

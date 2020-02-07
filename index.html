@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Resume</title>
+  <title>If Luna Lovegood had a digital resume</title>
 
   <link rel="stylesheet" href="css/index.css">
   <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Comfortaa&display=swap" rel="stylesheet"> 
@@ -15,6 +15,7 @@
 </head>
   <body>
     <div class="container">
+      <section class="navigation">
         <nav>
           <ul>
             <li>About</li>
@@ -23,38 +24,41 @@
             <li>Contact</li>    
           </ul>
         </nav>
+      </section>
     <section class="name">
       <h1>Luna Lovegood</h1>
       <p>"You are just as sane as I am"</p> 
     </section>
+    <section class="workHistory">
+      <h2>My Work History</h2>
+        <ul>
+          <li>Magizoologist: Current</li>
+          <li>Quidditch Commentator: 1996</li>
+        </ul>
+    </section>
     <section class="intro">
-      <h2>About Me</h2>
-      <p>I attended Hogwarts School of Witchcraft and Wizardry from 1992-1998. During my later years of attendence, when the school fell under the control of Lord Voldermort, I fought in multiple battles including one in the Department of Mysteries. I was also kidnapped and held for ransom by Death Eaters, including Bellatrix Lestrange. I currently work as a Magizoologist discovering and classifying many species that have never been encountered before.</p>
+      
     </section>
 
 
-    <div class="endOfBody">
-        <section class="skills">
-            <h2>Notable Skills</h2>
-            <ul>
-              <li>Belong to Ravenclaw House</li>
-              <li>Able to see Thestrals</li> 
-              <li>Reader of the Quibbler</li>
-              <li>Member of Dumbledore's Army</li>
-              <li>Member of the Order of the Phoenix</li>
-            </ul>
-          </section>
 
-      <section class="workHistory">
-        <h2>My Work History</h2>
-          <ul>
-            <li>Magizoologist: Current</li>
-            <li>Quidditch Commentator: 1996</li>
-          </ul>
+    <div class="positionReference">
+      <section class="aboutMe">
+      <h2>About Me</h2>
+      <p id="aboutMeP">I attended Hogwarts School of Witchcraft and Wizardry from 1992-1998.<br>During my later years of attendence, when the school fell under the control of Lord Voldermort, I fought in multiple battles including one in the Department of Mysteries.<br>I also survive being kidnapped and held for ransom by Death Eaters, including Bellatrix Lestrange.<br><br><span id="bold">I currently work as a Magizoologist discovering and classifying many species that have never been encountered before.</span>
+      </p>
+    </section>
+      <section class="skills" id="circle">
+        <h2>Notable Skills</h2>
+        <ul>
+          <li>Belong to Ravenclaw House</li>
+          <li>Able to see Thestrals</li> 
+          <li>Reader of the Quibbler</li>
+          <li>Member of Dumbledore's Army</li>
+          <li>Member of the Order of the Phoenix</li>
+        </ul>
       </section>
-    </div>
-
-    <section class="references">
+      <section class="references">
       <h2>References</h2>
         <ul>
           <li>Harry Potter</li>
@@ -71,17 +75,31 @@
           <li>Cell: 555.181.6497</li>
           <li>Owl: 5632 Winding Ave.</li>
         </ul>
-    </section>
+      </section>
+    </div>
 
   </body>
   <footer>
     <section class="contactMe">
-      <h2>Contact Me</h2>
-      <address>
-        521 Missing Shoes Lane
-        Little Hangleton
-      </address>
-      <p>555.654.3214</p>
+    <header>
+      <h2>Questions or comments? <strong>Get in touch:</strong></h2>
+    </header>
+              <section>
+                <form>
+                      <input name="name" placeholder="Name" type="text">
+                      <input name="email" placeholder="Email" type="email">
+                      <textarea name="message" placeholder="Message"></textarea>
+                      <button class="button" type="submit">
+                        <span>Send Message</span>
+                        </button>
+                </form>
+              </section>
+
+      <!-- <address>
+        <p>521 Missing Shoes Lane</p>
+        <p>Little Hangleton</p>
+        <p>555.654.3214</p>
+      </address> -->
     </section>
   </footer>
 </div>
